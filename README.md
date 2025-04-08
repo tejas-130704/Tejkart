@@ -51,12 +51,15 @@ This is an intelligent E-Commerce web application that enhances the user shoppin
 
 ```mermaid
 graph TD
-A[User Views Product] --> B[Adds to Cart or Reviews]
-B --> C[Sentiment Analysis via RNN]
-B --> D[Category Interest Tracking]
-C --> E[Interest Points Updated]
-D --> E
-E --> F[Generate Personalized Recommendations]
+A[User Registers & Logs In] --> B[Views Product]
+B --> C[NLP & CV Based Recommendations]
+B --> D[Writes Review or Adds to Cart]
+D --> E[Sentiment Analysis via RNN]
+D --> F[Category Interest Tracking]
+E --> G[Update Interest Points (Positive/Negative)]
+F --> G
+G --> H[Personalized Category-Based Recommendations]
+
 ```
 
 ---
