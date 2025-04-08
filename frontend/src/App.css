@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* For Webkit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+    width: 5px; /* Thin scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of scrollbar */
+    border-radius: 5px; /* Rounded edges */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Track color */
+  }
+  
+  /* Optional: Hide scrollbar but keep functionality */
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+ 
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+    
+body{
+  overflow-x: hidden;
+}
+
+.my-horizontal-scroll {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #888 transparent;
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+.my-horizontal-scroll::-webkit-scrollbar {
+  height: 1px; /* Smallest reliably visible size */
+}
+
+.my-horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.my-horizontal-scroll::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  height: 1px;
+}
+.my-horizontal-scroll {
+  overflow-x: scroll;      /* or auto */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+.my-horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.my-horizontal-scroll-s {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #888 transparent;
+}
+
+/* WebKit Browsers (Chrome, Edge, Safari) */
+.my-horizontal-scroll-s::-webkit-scrollbar {
+  height: 1px; /* Smallest reliably visible size */
+}
+
+.my-horizontal-scroll-s::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.my-horizontal-scroll-s::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  height: 1px;
+}
