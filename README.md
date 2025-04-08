@@ -1,5 +1,5 @@
 
-# 🛍️ Smart E-Commerce Platform with AI-Powered Recommendations
+# 🛍️ Tejkart - Smart E-Commerce Platform with AI-Powered Recommendations
 
 This is an intelligent E-Commerce web application that enhances the user shopping experience using Artificial Intelligence. It integrates **Computer Vision**, **Natural Language Processing (NLP)**, and **User Behavior Analysis** to deliver personalized product recommendations.
 
@@ -51,12 +51,12 @@ This is an intelligent E-Commerce web application that enhances the user shoppin
 
 ```mermaid
 graph TD
-A[User Registers & Logs In] --> B[Views Product]
-B --> C[NLP & CV Based Recommendations]
+A[User Registers and Logs In] --> B[Views Product]
+B --> C[NLP and CV Based Recommendations]
 B --> D[Writes Review or Adds to Cart]
 D --> E[Sentiment Analysis via RNN]
 D --> F[Category Interest Tracking]
-E --> G[Update Interest Points (Positive/Negative)]
+E --> G[Update Interest Points - Positive or Negative]
 F --> G
 G --> H[Personalized Category-Based Recommendations]
 
